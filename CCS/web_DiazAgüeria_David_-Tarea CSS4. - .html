@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS por capas · Modelo de caja + colores por grupo</title>
+
+    <style>
+      /* 
+         CSS 4 · MODELO DE CAJA
+         */
+
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-color: rgb(245, 247, 250);
+        margin: 0;
+      }
+
+      main {
+        max-width: 900px;
+        margin: 24px auto;
+        padding: 16px;
+      }
+
+      header, nav, section, footer {
+        border: 2px solid rgb(210, 220, 230);
+        background-color: rgb(255, 255, 255);
+        padding: 16px;
+        margin: 14px 0;
+        border-radius: 14px;
+      }
+
+      header h1 {
+        text-align: center;
+        margin: 0 0 10px 0;
+      }
+
+      article {
+        border: 1px solid rgb(225, 230, 235);
+        background-color: rgb(255, 255, 255);
+        padding: 14px;
+        margin: 12px 0;
+        border-radius: 12px;
+      }
+
+      img {
+        border: 2px solid rgb(210, 220, 230);
+        border-radius: 10px;
+      }
+
+      /* 
+         CSS 3 · COLORES POR GRUPO
+         */
+
+      .titulo {
+        text-align: center;
+        color: rgb(27, 38, 59);
+      }
+
+      .texto {
+        color: rgb(45, 55, 72);
+      }
+
+      .texto strong {
+        color: rgb(231, 111, 81);
+      }
+
+      /* Grupo A */
+      .grupo-a .titulo {
+        color: rgb(45, 106, 79);
+      }
+
+      .grupo-a .texto {
+        color: rgb(27, 38, 59);
+      }
+
+      .grupo-a .texto strong {
+        color: rgb(10, 123, 131);
+      }
+
+      /* Grupo B */
+      .grupo-b .titulo {
+        color: rgb(138, 43, 226);
+      }
+
+      .grupo-b .texto {
+        color: rgb(38, 70, 83);
+      }
+
+      .grupo-b .texto strong {
+        color: rgb(244, 162, 97);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1 class="titulo">Modelo de caja con CSS por capas</h1>
+      </header>
+      <nav>
+        <p class="texto">
+          <strong>Nav</strong>: Breve descripción de animales mitológicos.
+        </p>
+      </nav>
+
+      <!-- GRUPO A -->
+      <section id="grupo-a" class="grupo-a">
+        <h2 class="titulo">Grupo A</h2>
+
+        <article>
+          <h3 class="titulo">Dragón</h3>
+          <p class="texto">
+            Habita en bosques antiguos y húmedos. Su rasgo distintivo es su <strong>aliento esmeralda</strong> que regenera la vegetación.
+          </p>
+          <img src=https://static.wikia.nocookie.net/videojuego/images/5/53/Drag%C3%B3n.jpg/revision/latest?cb=20180128192831
+               alt="Dragón escupiendo fuego"
+               width="550">
+        </article>
+
+        <article>
+          <h3 class="titulo">Ent del roble Antiguo</h3>
+          <p class="texto">
+            Habita en bosques milenarios y se confunde con los árboles. Su rasgo más distintivo es su <strong> piel de corteza</strong>.
+          </p>
+          <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtS15GTBIdOdBOipZU-pHZsmRVAHCf8c94yA&s
+               alt=" Ent del roble Antiguo en un bosque"
+               width="550">
+        </article>
+        <article>
+          <h3 class="titulo">Rana de Jade</h3>
+          <p class="texto">
+            Vive en charcas profundas y silenciosas. Destaca por su <strong>brillo verdoso </strong>que advierte a los depredadores.
+          </p>
+          <img src=https://thumbs.dreamstime.com/b/peque%C3%B1a-rana-de-%C3%A1rbol-verde-que-sostiene-encendido-la-palmera-20189774.jpg
+               alt="Rana de Jade"
+               width="550">
+        </article>
+      </section>
+
+      <!--  GRUPO B -->
+      <section id="grupo-b" class="grupo-b">
+        <h2 class="titulo">Grupo B</h2>
+
+        <article>
+          <h3 class="titulo">Fénix</h3>
+          <p class="texto">
+           Habita zonas volcánicas y cielos abiertos. Renace envuelto en <strong>llamas violetas</strong>.
+          </p>
+          <img src=https://i2.wp.com/2.bp.blogspot.com/-qViM-uoLJrM/U6QApFA41rI/AAAAAAAAOXs/mU1odI2GDSc/s1600/ave-fenix1.jpg
+               alt="Fénix iniciando su vuelo"
+               width="550">
+        </article>
+        <article>
+          <h3 class="titulo">Espectro</h3>
+          <p class="texto">
+            Aparece en ruinas abandonadas. Su cuerpo etéreo emite un <strong>resplandor púrpura</strong>.
+          </p>
+          <img src=https://i.pinimg.com/236x/8e/da/46/8eda46e9cbb0328b24262ca6523e17c4.jpg
+               alt="escpectro saliendo de un libro"
+               width="550">
+        </article>
+        <article>
+          <h3 class="titulo">León Astral</h3>
+          <p class="texto">
+            Recorre desiertos bajo cielos estrellados. Su melena parece hecha de <strong>energía cósmica</strong>.
+          </p>
+          <img src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgebmk5uGGnFUDl17tNOsesLGRNkDCflGl3F8SZQXfl0ZM1vUcPRiplKtwuoIf-DJOXHlccCBklub6hs_PdNAH-9e_MAdTkafva7JbsGXoiuoZ2cckj-AIxsw1ekQ5v2Xl5KQtdyfuy_tI/s1600/httpswww.joya.lifeblogla-constelacion-de-leo.jpg
+               alt="Constelación del león"
+               width="550">
+        </article>
+      </section>
+
+      <footer>
+        <p class="texto">
+          <strong>Footer</strong>: davidda67@educastur.es
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

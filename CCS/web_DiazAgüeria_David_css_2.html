@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS 2 · id + índice — DavidDiazAgüeria</title>
+    <style>
+      /* Tipografía global (web-safe) */
+      * { font-family: "Times New Roman"; }
+
+      /* Fondo general (RGB) */
+      body { background-color: #F0E1AD; }
+
+      /* === REGLAS GENERALES (afectan al primer animal) === */
+      h1 { color: #E00911; }      /* color 1 */
+      p  { color: #3D4294; }       /* color 2 */
+      strong { color: #F227F5; } /* énfasis general */
+
+      /* === REGLAS POR id (afectan SOLO al segundo animal) === */
+      #titulo-animal2 { color: #FA8916; }   
+      #desc-animal2   { color:#3D4294 ; }     
+      #desc-animal2 strong { color:#CD65FC ; } 
+    </style>
+  </head>
+  <body>
+    <h2 id="indice">Índice</h2>
+    <ul>
+      <li><a href="#titulo-animal1">Primera criatura</a></li>
+      <li><a href="#titulo-animal2">Segunda criatura</a></li>
+    </ul>
+
+    <PRIMER ANIMAL:web_DiazAgüeria_David_css_1.html>
+    <h1 id="titulo-animal2">Primer animal: El Grifo</h1>
+    <p Descripción del animal>
+     El <strong>Grifo</strong> es una criatura mitológica que vive en zonas montañosas de Asia y India. Su hábitat se formava por partes deserticas y montes hiperbóreos.
+      Se caracteriza por tener por ser una criatura mitad águila y mitad león un plumaje dorado, en la parte del águila y por un pelaje amrillo/ rojizo, en l aparte del leon.
+      es conocido por aparecer en leyendas antiguas. 
+    </p>
+    <img src=https://3.bp.blogspot.com/-6JjHQXlnFwo/VBLxgQXSjxI/AAAAAAAAA0I/-bMCXGPLwBw/s1600/108-Grifo5.jpg
+         alt="Grifo en un hábitat de montaña con colores llamativos"
+         width="550">
+    <p><a href="#indice">Volver al índice</a></p>
+
+    <SEGUNDO ANIMAL: con ids para estilo y para anclar desde el índice -->
+    <h1 id="titulo-animal2">Segundo animal: El Unicornio</h1>
+    <p Descripcion del animal>
+      El <strong>Unicornio</strong> es una criatura mitológica que se parece a un caballo blanco con un solo cuerno en la frente. Simboliza pureza y belleza. Se le atribuyen poderes mágicos, como volar.
+    </p>
+    <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLwXPUtG71cxyGNCa4mDZttoZFW34GfsU3wg&s
+         alt="Unicornio en la padrera"
+         width="550">
+    <p><a href="#indice">Volver al índice</a></p>
+  </body>
+</html>
