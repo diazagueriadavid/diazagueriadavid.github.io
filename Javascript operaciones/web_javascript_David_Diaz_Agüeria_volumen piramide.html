@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Volumen Pirámide</title>
+</head>
+<body>
+    <h1>Cálculo del Volumen de una Pirámide</h1>
+
+    <script>
+        let lado = parseFloat(prompt("Ingrese el lado de la base:"));
+        let altura = parseFloat(prompt("Ingrese la altura de la pirámide:"));
+
+        let volumen = (Math.pow(lado, 2) * altura) / 3;
+
+        document.write("El volumen de la pirámide es: " + volumen);
+    </script>
+</body>
+</html>

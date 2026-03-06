@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Volumen Cilindro</title>
+</head>
+<body>
+    <h1>Cálculo del Volumen de un Cilindro</h1>
+
+    <script>
+        let radio = parseFloat(prompt("Ingrese el radio del cilindro:"));
+        let altura = parseFloat(prompt("Ingrese la altura del cilindro:"));
+
+        let volumen = Math.PI * Math.pow(radio, 2) * altura;
+
+        document.write("El volumen del cilindro es: " + volumen);
+    </script>
+</body>
+</html>
