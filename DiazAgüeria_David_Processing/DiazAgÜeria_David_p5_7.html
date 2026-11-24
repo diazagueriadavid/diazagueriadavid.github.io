@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica 7 - Carita adaptable</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+
+<script>
+function setup() {
+
+  // Lienzo de 600 x 400.
+  createCanvas(600, 400);
+  background(255);
+
+  // Variables derivadas del tamaño del lienzo.
+  let centroX = width / 2;
+  let centroY = height / 2;
+  let diametro = height * 0.75;
+
+  // Variables para calcular los ojos.
+  let separacion = diametro * 0.1833;
+  let diametroOjo = diametro * 0.0667;
+  let posicionOjos = centroY - diametro * 0.15;
+
+  // Variables para calcular la boca.
+  let anchoBoca = diametro * 0.50;
+  let altoBoca = diametro * 0.333;
+  let posicionBoca = centroY + diametro * 0.05;
+
+  // Cabeza: círculo centrado y de tamaño adaptable.
+  noFill();
+  stroke(0);
+  strokeWeight(diametro * 0.01);
+  circle(centroX, centroY, diametro);
+
+  // Ojos: dos círculos negros simétricos.
+  fill(0);
+  noStroke();
+  circle(centroX - separacion, posicionOjos, diametroOjo);
+  circle(centroX + separacion, posicionOjos, diametroOjo);
+
+  // Boca: sonrisa proporcional al tamaño de la cabeza.
+  noFill();
+  stroke(0);
+  strokeWeight(diametro * 0.0133);
+  arc(centroX, posicionBoca, anchoBoca, altoBoca, 0, PI);
+
+}
+</script>
+
+</body>
+</html>

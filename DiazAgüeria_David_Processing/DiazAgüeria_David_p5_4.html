@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica 4 - Carita sonriente</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+
+<script>
+function setup() {
+
+  // Fondo blanco y lienzo de 400 x 400.
+  createCanvas(400, 400);
+  background(255);
+
+  // Cabeza: circunferencia sin relleno.
+  noFill();
+  stroke(0);
+  strokeWeight(3);
+  circle(200, 200, 300);
+
+  // Ojos: dos círculos negros.
+  fill(0);
+  noStroke();
+  circle(145, 155, 20);
+  circle(255, 155, 20);
+
+  // Boca: sonrisa mediante un arco inferior.
+  noFill();
+  stroke(0);
+  strokeWeight(4);
+  arc(200, 215, 150, 100, 0, PI);
+
+}
+</script>
+
+</body>
+</html>

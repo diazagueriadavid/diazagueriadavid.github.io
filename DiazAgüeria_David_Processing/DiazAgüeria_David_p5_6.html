@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica 6 - Mi póster de pádel</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+
+<body>
+<script>
+
+function setup() {
+
+  // Crear el lienzo
+  createCanvas(800, 500);
+
+  // Fondo azul oscuro
+  background(25, 40, 75);
+  noStroke();
+
+  // TITULO
+  textSize(28);
+  textAlign(CENTER, TOP);
+  fill(255, 255, 255);
+  text("EL MUNDO DEL PADEL", 320, 16);
+
+  // SUBTITULO
+  textSize(16);
+  fill(255, 145, 65);
+  text("Deporte, diversion y compañerismo", 320, 60);
+
+  // FRASE PRINCIPAL
+  textSize(28);
+  textAlign(CENTER, CENTER);
+  fill(255, 255, 255);
+  text("NUNCA DES TU PARTIDO POR PERDIDO", 320, 150);
+
+  // FRASE SECUNDARIA
+  textSize(16);
+  fill(60, 210, 205);
+  text("Cada punto cuenta, cada golpe importa", 320, 200);
+
+  // OTRA FRASE
+  textSize(16);
+  fill(235, 235, 245);
+  text("Entrena, disfruta y mejora cada dia", 320, 235);
+
+  // NOTAS
+  textSize(12);
+  fill(255, 145, 65);
+  textAlign(CENTER, CENTER);
+  text("PADEL - ESFUERZO - CONSTANCIA - EQUIPO", 320, 285);
+
+  // ETIQUETAS DE LAS ESQUINAS
+  textSize(12);
+  fill(255, 255, 255);
+
+  textAlign(LEFT, TOP);
+  text("(0, 0)", 6, 6);
+
+  textAlign(RIGHT, TOP);
+  text("(640, 0)", 634, 6);
+
+  textAlign(LEFT, BOTTOM);
+  text("(0, 360)", 6, 354);
+
+  textAlign(RIGHT, BOTTOM);
+  text("(640, 360)", 634, 354);
+
+  // TEXTO DEL CENTRO
+  textAlign(CENTER, CENTER);
+  textSize(12);
+  fill(60, 210, 205);
+  text("Centro (320, 180)", 320, 180);
+
+}
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica 3 - Mi casa</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+<script>
+function setup() {
+  createCanvas(400, 400);
+
+  // Fondo gris suave
+  background(200);
+
+  // Paredes de la casa
+  stroke(120, 75, 40);
+  strokeWeight(3);
+  fill(240, 210, 160);
+  rect(70, 170, 260, 170);
+
+  // Puerta marrón
+  stroke(90, 45, 20);
+  strokeWeight(3);
+  fill(150, 85, 40);
+  rect(165, 245, 70, 95);
+
+  // Manilla de la puerta
+  stroke(255, 220, 80);
+  strokeWeight(5);
+  point(220, 295);
+
+  // Ventana izquierda
+  stroke(100, 55, 30);
+  strokeWeight(4);
+  fill(130, 210, 245);
+  rect(90, 205, 55, 50);
+
+  // Divisiones de la ventana izquierda
+  stroke(100, 55, 30);
+  strokeWeight(2);
+  line(117.5, 205, 117.5, 255);
+  line(90, 230, 145, 230);
+
+  // Ventana derecha
+  stroke(100, 55, 30);
+  strokeWeight(4);
+  fill(130, 210, 245);
+  rect(255, 205, 55, 50);
+
+  // Divisiones de la ventana derecha
+  stroke(100, 55, 30);
+  strokeWeight(2);
+  line(282.5, 205, 282.5, 255);
+  line(255, 230, 310, 230);
+
+  // Tejado triangular
+  stroke(100, 35, 25);
+  strokeWeight(3);
+  fill(180, 55, 45);
+  triangle(45, 175, 200, 65, 355, 175);
+
+}
+</script>
+</body>
+</html>
+
